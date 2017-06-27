@@ -1,0 +1,221 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/***********************
+*********HEADER*********
+***********************/
+
+.header {
+    height: 125px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+}
+
+.control {
+    font-family: 'Press Start 2P', cursive;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+}
+
+.control:hover {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 30px;
+    border-radius: 5pc;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: inline-block;
+    float: right;
+    margin: 30px;
+    padding: 30px;
+}
+
+.nav-links a {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 20px;
+    border-radius: 5pc;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: 5px solid white;
+}
+
+.mario {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.mario:hover {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 30px;
+    border-radius: 5pc;
+    text-decoration: none;
+}
+
+
+/***********************
+***********BODY*********
+***********************/
+
+body {
+    background-image: url(images/mario%20shrug.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: gold;
+}
+
+.row {
+    margin-top: 20%;
+}
+
+p {
+    line-height: 10vh;
+    font-size: 300%;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 50px;
+    padding: 30px;
+    font-weight: 700;
+}
+
+
+/************************
+*********IMAGES**********
+************************/
+
+
+/************************
+*********LINKS***********
+************************/
+
+
+/***********************
+********FOOTER**********
+***********************/
+
+
+/***********************
+********MOBILE**********
+***********************/
+@media (max-width: 1500px){
+    .nav-links a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1375px) {
+    .header {
+        display: block;
+        text-align: center;
+        height: 500px;
+        position: static;
+    }
+    .control {
+        display: block;
+        font-size: 65px;
+    }
+    .nav-links {
+        float: none;
+    }
+    .nav-links a {
+        font-size: 40px;
+    }
+    body {
+        background-size: contain;
+        background-position: bottom;
+    }
+    p {
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 750px;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-links a {
+        display: block;
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    body {
+        background-position: bottom;
+    }
+    .row {
+        margin-top: 10%;
+    }
+}
+
+@media(max-width: 500px) {
+    .header {
+        height: 400px;
+    }
+    .super {
+        display: none;
+    }
+    .mario {
+        display: inherit;
+        margin-top: 10%;
+        padding-top: 5%;
+    }
+    .control {
+        font-size: 30px
+    }
+    .nav-links a {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px;
+        line-height:30px;
+    }
+}
+@media (max-width: 320px) {
+    .header {
+        height: 450px;
+    }
+    .nav-links {
+        padding-top: 1px;
+    }
+    .nav-links a{
+        font-size: 10px;
+    }
+    p {
+        line-height: 20px;
+    }
+}

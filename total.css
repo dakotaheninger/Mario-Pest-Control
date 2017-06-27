@@ -1,0 +1,322 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/***********************
+*********HEADER*********
+***********************/
+
+.header {
+    height: 125px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+}
+
+.control {
+    font-family: 'Press Start 2P', cursive;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+}
+
+.control:hover {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 30px;
+    border-radius: 5pc;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: inline-block;
+    float: right;
+    margin: 30px;
+    padding: 30px;
+}
+
+.nav-links a {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 20px;
+    border-radius: 5pc;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: 5px solid white;
+}
+
+.mario {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.mario:hover {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 30px;
+    border-radius: 5pc;
+    text-decoration: none;
+}
+
+
+/***********************
+***********BODY*********
+***********************/
+
+body {
+    background-image: url(images/captured%20background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2,
+h3 {
+    color: white;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+.top {
+    margin-top: 20%;
+}
+
+.captured {
+    text-align: center;
+    margin-bottom: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 50px;
+}
+
+.row {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.pest-total {
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    margin-top: 40px;
+}
+
+.pest-total-money {
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+.pest-back {
+    background-color: rgba(255, 255, 255, .6);
+    height: 200px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.pest-input {
+    height: 75px;
+    width: 300px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.goomba-row {
+    height: 700px;
+    background-image: url(images/goombas.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.goomba-col {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 700px;
+    border-radius: 50px;
+}
+
+.bob-omb-row {
+    height: 700px;
+    background-image: url(images/king%20bob-omb.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.bob-omb-col {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 700px;
+    border-radius: 50px;
+}
+
+.cheep-cheep-row {
+    height: 700px;
+    background-image: url(images/cheep-cheeps.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cheep-cheep-col {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 700px;
+    border-radius: 50px;
+}
+
+.complete-total {
+    color: white;
+}
+.final-total {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+.goomba-align{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.cheep-cheep-align{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+/************************
+*********IMAGES**********
+************************/
+
+
+/************************
+*********LINKS***********
+************************/
+
+
+/***********************
+********FOOTER**********
+***********************/
+
+
+/***********************
+********MOBILE**********
+***********************/
+@media (max-width: 1500px){
+    .nav-links a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1375px) {
+    .header {
+        display: block;
+        text-align: center;
+        height: 500px;
+        position: static;
+    }
+    .control {
+        display: block;
+        font-size: 65px;
+    }
+    .nav-links {
+        float: none;
+    }
+    .nav-links a {
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        height: 750px;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-links a {
+        display: block;
+        font-size: 30px;
+    }
+}
+@media(max-width: 500px) {
+    .header {
+        height: 400px;
+    }
+    .super {
+        display: none;
+    }
+    .mario {
+        display: inherit;
+        margin-top: 10%;
+        padding-top: 5%;
+    }
+    .control {
+        font-size: 30px
+    }
+    .nav-links a {
+        font-size: 15px;
+    }
+    h1 {
+        padding: 20px;
+        font-size: 20px;
+    }
+    h2 {
+        padding: 10px;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .pest-total {
+        font-size: 40px;
+    }
+    .pest-total-money {
+        font-size: 40px;
+    }
+}
+@media (max-width: 320px) {
+    .header {
+        height: 500px;
+    }
+    .pest-input {
+        width: 275px;
+    }
+}

@@ -1,0 +1,316 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/***********************
+*********HEADER*********
+***********************/
+
+.header {
+    height: 125px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+}
+
+.control {
+    font-family: 'Press Start 2P', cursive;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+}
+.control:hover{
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 30px;
+    border-radius: 5pc;
+    text-decoration: none;
+}
+
+
+.nav-links {
+    display: inline-block;
+    float: right;
+    margin: 30px;
+    padding: 30px;
+}
+
+.nav-links a {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 20px;
+    border-radius: 5pc;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: 5px solid white;
+}
+
+.mario {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+.mario:hover {
+    padding: 10px;
+    margin: 20px;
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+    font-size: 30px;
+    border-radius: 5pc;
+    text-decoration: none;
+}
+
+
+/***********************
+***********BODY*********
+***********************/
+
+body {
+    background-image: url(images/peach%20castle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+}
+
+.top {
+    margin-top: 15%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.service {
+    font-size: 30px;
+    display: inline-block;
+    width: 25%;
+    margin: 0 2%;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.goomba {
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.bob-omb {
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50px;
+}
+
+.cheep-cheep {
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50px;
+}
+
+.company {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+}
+
+.s {
+    color: dodgerblue;
+}
+
+.u {
+    color: gold;
+}
+
+.p {
+    color: orangered
+}
+
+.e {
+    color: green;
+}
+
+.r {
+    color: gold;
+}
+
+.bottom {
+    padding: 100px
+}
+
+p {
+    margin: 20% auto;
+}
+
+.coin-text {
+    display: none;
+}
+
+
+/************************
+*********IMAGES**********
+************************/
+
+.bob-pic {
+    display: block;
+    margin: 0 auto;
+    margin-top: 22%
+}
+
+.goomba-pic {
+    display: block;
+    margin: 33% auto;
+}
+
+
+/************************
+*********LINKS***********
+************************/
+
+
+/***********************
+********FOOTER**********
+***********************/
+
+
+/***********************
+********MOBILE**********
+***********************/
+@media (max-width: 1500px){
+    .nav-links a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1440px){
+
+}
+@media (max-width: 1375px) {
+    .header {
+        display: block;
+        text-align: center;
+        height: 500px;
+        position: static;
+    }
+    .control {
+        display: block;
+        font-size: 65px;
+    }
+    .nav-links {
+        float: none;
+    }
+    .nav-links a {
+        font-size: 40px;
+    }
+    p {
+        margin-top: 10%;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .goomba-pic {
+        display: none;
+    }
+    .bob-pic {
+        display: none;
+    }
+    .cheep-pic {
+        display: none;
+    }
+    .coin {
+        display: none;
+    }
+    .coin-text {
+        display: initial;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 750px;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-links a {
+        display: block;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .header {
+        height: 400px;
+    }
+    .super {
+        display: none;
+    }
+    .mario {
+        display: inherit;
+        margin-top: 10%;
+        padding-top: 5%;
+    }
+    .control {
+        font-size: 30px
+    }
+    .nav-links a {
+        font-size: 15px;
+    }
+    .service {
+        display: block;
+        width: 100%;
+    }
+    p {
+        padding: 20px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:360px) {
+    .mario {
+        font-size: 20px;
+    }
+    .control {
+        font-size: 20px;
+    }
+    .nav-links a {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+@media (max-width:320px){
+    p {
+        font-size: 8px;
+    }
+}
