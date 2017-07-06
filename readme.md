@@ -1,4 +1,4 @@
 # Mario Pest Control 
 <p>
-    This is my first project built at V School. The assignment was to keep track of how much Princess Peach owes Mario for his pest control services.
+    This is my first project built at V School! The assignment was to keep track of how much Princess Peach owes Mario for his pest control services! This Project was built using HTML, CSS, and Javascript! It focuses mostly on CSS and Javascript skills!
 </p>
